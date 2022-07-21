@@ -35,6 +35,7 @@ button {
   outline: none;
   font-family: inherit;
   border: none;
+  background: transparent;
 }
 
 img {
@@ -356,9 +357,22 @@ img {
 }
 
 footer {
+  padding: 100px 0 30px;
+
   background: #0e0e33;
   color: var(--light-text-color);
 }
+
+.foter-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 61px;
+  margin-bottom: 150px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 footer a {
   color: var(--light-text-color);
 }
@@ -367,4 +381,52 @@ footer img {
 }
 footer .logo {
   font-size: 24px;
+}
+
+.list-container {
+  display: flex;
+  gap: 80px;
+  padding-bottom: 148px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.list-container .title {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.26;
+}
+
+.list-container {
+  row-gap: 10px;
+}
+
+.list-container .item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+  font-size: 15px;
+  line-height: 1.87;
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.copy {
+  font-size: 15px;
+  line-height: 2;
+}
+
+.footer-bottom-container .list {
+  display: flex;
+  gap: 20px;
+}
+.footer-bottom-container button {
+  color: inherit;
 }
