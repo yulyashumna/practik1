@@ -6,30 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- HEADER  -->
-    <header>
-        <a href="./index.html"><img src="./img/logo.svg" alt="logo">Apello</a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Process</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Resources</a></li>
-            </ul>
-        </nav>
-        <button type="button">Get project quote</button>
+    <header class="header">
+        <div class="container">
+            <a class="header-logo" href="./index.html"><img src="./img/logo.svg" alt="logo">Apello</a>
+            <nav>
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-link" href="./index.html">Home</a></li>
+                    <li class="header-item"><a class="header-link" href="">Portfolio</a></li>
+                    <li class="header-item"><a class="header-link" href="">Process</a></li>
+                    <li class="header-item"><a class="header-link" href="">Team</a></li>
+                    <li class="header-item"><a class="header-link" href="">Resources</a></li>
+                </ul>
+            </nav>
+            <button class="header-btn" type="button">Get project quote</button>
+        </div>
     </header>
     <!-- MAIN  -->
     <main>
         <!-- HERO  -->
-        <section>
-            <h1>Leaders in Software Design & Development</h1>
-            <p>Establishing a technology company takes a strong software team to deliver on what needs to be done.</p>
-            <a href="">View our work</a>
+        <section class="section hero">
+            <div class="container">
+                <h1 class="hero-title">Leaders in Software Design & Development</h1>
+                <p class="hero-text">Establishing a technology company takes a strong software team to deliver on what
+                    needs to be done.
+                </p>
+                <a class="hero-btn" href="">View our work</a>
+            </div>
         </section>
         <section>
             <h2>Your reliable web and app development partner</h2>
@@ -92,52 +104,79 @@
             </ul>
             <a href="#">Contact us</a>
         </section>
-        <section>
-            <h2>We’re proud of our work</h2>
-            <ul>
-                <li>
-                    <p>50+ Successfully completed projects</p>
-                </li>
-                <li>
-                    <p>35+ Happy and appreciative customers</p>
-                </li>
-                <li>
-                    <p>10 Combined years of experience</p>
-                </li>
-                <li>
-                    <p>23 Experienced and talented workers</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img width="545" height="402" src="./img/image.jpg" alt="Eyetelligence – AI-based Eye Health">
-                    <h3>Eyetelligence – AI-based Eye Health</h3>
-                    <p>Eyetelligence is a medtech company using AI based software to recognise eye diseases. Appello
-                        software developed their
-                        website which has just been released.</p>
-                </li>
-                <li>
-                    <img width="545" height="402" src="./img/image2.jpg" alt="Give + Get – Charity Challenger App">
-                    <h3>Give + Get – Charity Challenger App</h3>
-                    <p>Give + Get is a modern charity app. “Give”, while joining a community of active people who
-                        complete challenges and reap
-                        the rewards they offer; “Get”.</p>
-                </li>
-                <li>
-                    <img width="545" height="402" src="./img/image3.jpg" alt="Voken – Shared Childcare App">
-                    <h3>Voken – Shared Childcare App</h3>
-                    <p>Voken lets people arrange childcare with families they trust, earn tokens and use for your own
-                        requests.</p>
-                </li>
-                <li>
-                    <img width="545" height="402" src="./img/image4.jpg" alt="">
-                    <h3>Chattii – Disability Dating App</h3>
-                    <p>Chattii is born from the need to provide a space for people living with disabilities to connect,
-                        chat, and explore their
-                        love life.</p>
-                </li>
-            </ul>
-            <button type="button">See more</button>
+        <section class="work">
+            <div class="container">
+                <h2 class="work-title">We’re proud of our work</h2>
+                <ul class="work-list-first">
+                    <li class="work-item">
+                        <p class="work-text">
+                            <span class="work-number">50+</span> Successfully completed projects
+                        </p>
+                    </li>
+                    <li class="work-item">
+                        <p class="work-text">
+                            <span class="work-number">35+</span> Happy and appreciative customers
+                        </p>
+                    </li>
+                    <li class="work-item">
+                        <p class="work-text">
+                            <span class="work-number">10</span> Combined years of experience
+                        </p>
+                    </li>
+                    <li class="work-item">
+                        <p class="work-text">
+                            <span class="work-number">23</span> Experienced and talented workers
+                        </p>
+                    </li>
+                </ul>
+                <ul class="work-list-second">
+                    <li class="work-item">
+                        <img width="545" height="402" src="./img/image.jpg" alt="Eyetelligence – AI-based Eye Health">
+                        <div class="work-thumb">
+                            <h3 class="work-list-title">Eyetelligence – AI-based Eye Health</h3>
+                            <p class="work-text">Eyetelligence is a medtech company using AI based software to recognise
+                                eye
+                                diseases. Appello
+                                software developed their
+                                website which has just been released.</p>
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <img width="545" height="402" src="./img/image2.jpg" alt="Give + Get – Charity Challenger App">
+                        <div class="work-thumb">
+                            <h3 class="work-list-title">Give + Get – Charity Challenger App</h3>
+                            <p class="work-text">Give + Get is a modern charity app. “Give”, while joining a community
+                                of
+                                active
+                                people who
+                                complete challenges and reap
+                                the rewards they offer; “Get”.</p>
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <img width="545" height="402" src="./img/image3.jpg" alt="Voken – Shared Childcare App">
+                        <div class="work-thumb">
+                            <h3 class="work-list-title">Voken – Shared Childcare App</h3>
+                            <p class="work-text">Voken lets people arrange childcare with families they trust, earn
+                                tokens
+                                and
+                                use for your own
+                                requests.</p>
+                        </div>
+                    </li>
+                    <li class="work-item">
+                        <img width="545" height="402" src="./img/image4.jpg" alt="">
+                        <div class="work-thumb">
+                            <h3 class="work-list-title">Chattii – Disability Dating App</h3>
+                            <p class="work-text">Chattii is born from the need to provide a space for people living with
+                                disabilities to connect,
+                                chat, and explore their
+                                love life.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="work-btn" type="button">See more</button>
+            </div>
         </section>
     </main>
 </body>
