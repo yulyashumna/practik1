@@ -1,6 +1,7 @@
 :root {
 	--light-text-color: #ffffff;
 	--text-color: #737373;
+	--accent-color: #0a8bfe;
 }
 
 body {
@@ -48,10 +49,9 @@ img {
 
 /* HEADER  */
 .header {
-	/* position: absolute;
-	width: 100%; */
+	position: absolute;
+	width: 100%;
 	padding: 40px 0;
-	background-color: #100e35;
 }
 
 header .container {
@@ -102,10 +102,10 @@ header .container {
 /* ------------- HERO ------------- */
 .hero {
 	padding: 240px 0 270px;
-	background-color: #100e35;
-	/* background-image: url(../img/background.jpg);
+	background-color: #0d0d33;
+	background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
-	background-position: center; */
+	background-position: center;
 }
 
 .hero-title {
@@ -129,7 +129,94 @@ header .container {
 	font-size: 15px;
 	line-height: 2;
 	color: var(--light-text-color);
-	background: #0a8bfe;
+	background-color: var(--accent-color);
+	border-radius: 4px;
+}
+
+/* ABOUT  */
+
+.about {
+	padding: 150px 0;
+	text-align: center;
+}
+
+.about-title {
+	margin-bottom: 35px;
+	font-weight: 400;
+	font-size: 41px;
+	line-height: 1.22;
+	text-align: center;
+	color: #000000;
+}
+
+.about-text {
+	margin-bottom: 85px;
+	font-size: 12px;
+	line-height: 2.5;
+	text-align: center;
+	color: #737373;
+}
+
+.about-btn-list {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	margin-bottom: 50px;
+}
+
+.about-btn {
+	font-size: 23px;
+	line-height: 1.65;
+	color: #000000;
+
+	transition: color 250ms linear;
+}
+
+.about-btn.active {
+	color: var(--accent-color);
+}
+
+.about-btn:hover,
+.about-btn:focus {
+	color: var(--accent-color);
+}
+
+.about-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-bottom: 65px;
+}
+
+.about-item {
+	flex-basis: calc((100% - 40px) / 2);
+	text-align: left;
+	padding: 38px 40px;
+	border: 1px solid #e8e8e8;
+}
+
+.about-sub-title {
+	margin-bottom: 23px;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 1.47;
+	color: #000000;
+}
+.about-discription {
+	font-size: 16px;
+	line-height: 1.88;
+	color: #737373;
+}
+
+.about-link {
+	display: inline-block;
+	padding: 15px 49px;
+	margin: 0 auto;
+
+	font-size: 15px;
+	line-height: 2;
+	color: #ffffff;
+	background-color: var(--accent-color);
 	border-radius: 4px;
 }
 
@@ -138,7 +225,7 @@ header .container {
 .work {
 	padding-top: 150px;
 	padding-bottom: 70px;
-	background: #100e35;
+	background-color: #100e35;
 }
 
 .work-title {
@@ -216,6 +303,6 @@ header .container {
 	font-size: 15px;
 	line-height: 2;
 	color: #ffffff;
-	background-color: #0a8bfe;
+	background-color: var(--accent-color);
 	border-radius: 4px;
 }
