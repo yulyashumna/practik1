@@ -102,9 +102,10 @@ header .container {
 /* ------------- HERO ------------- */
 .hero {
 	padding: 240px 0 270px;
-	background-image: url(../img/background.jpg);
+	background-color: #100e35;
+	/* background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 }
 
 .hero-title {
@@ -137,7 +138,7 @@ header .container {
 .work {
 	padding-top: 150px;
 	padding-bottom: 70px;
-	background: #0e0eff;
+	background: #100e35;
 }
 
 .work-title {
